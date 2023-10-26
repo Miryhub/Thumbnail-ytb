@@ -1,5 +1,4 @@
 'use client'
-import Image from 'next/image'
 import { Titillium_Web } from 'next/font/google'
 import React from "react"
 import copy from 'copy-to-clipboard'
@@ -47,7 +46,7 @@ const Thumb = () => {
     console.log('hello from esmail ahbal')
   }
   return (
-    <div className={`container mx-auto px-4 py-8 ${font.className}`}>
+    <div className="container mx-auto px-4 py-8">
       <header className="text-center mb-8">
         <h1 className="text-3xl font-bold mb-2">
           Youtube Thumbnail Downloader
@@ -79,7 +78,7 @@ const Thumb = () => {
             {thumbnailOptions.map((option, index) => (
               <div key={index} className=" relative thumbnail-option">
 
-                <Image height={3000} width={5000} src={option.url} alt={`Thumbnail ${index + 1}`} className="object-cover object-center h-full w-full  my-4" />
+                <img src={option.url} alt={`Thumbnail ${index + 1}`} className="object-cover object-center my-4" />
                 <a
                   href={option.url}
                   download={option.url}
@@ -99,7 +98,7 @@ const Thumb = () => {
       )}
       <div className="mt-10 flex justify-center items-center">
         <div className="max-w-7xl mx-auto text-center tracking-wide">
-          <p className="text-2xl lg:text-4xl mt-2 font-bold border-gray-100 border-b-2 py-7 ">
+          <p className="text-2xl lg:text-4xl mt-2 font-bold border-gray-100 border-b-2 ">
             Download YouTube video thumbnails in different sizes and qualities with our free YouTube Thumbnail Downloader.
           </p>
           <p className=" my-4 text-xl lg:text-3xl ">            Learn why engaging thumbnails matter and how to download them effortlessly.
@@ -110,7 +109,7 @@ const Thumb = () => {
             <br />
             Our online tool simplifies the process of downloading YouTube video thumbnails in various dimensions and quality settings.
           </p>
-          <p className="text-sky-700 my-4 text-4xl lg:text-5xl" >
+          <p className="text-sky-700 mt-2 text-4xl lg:text-5xl" >
             What is a YouTube Thumbnail Downloader?
 
           </p>
