@@ -98,7 +98,7 @@ const Thumb = () => {
       )}
       <div className="mt-10 flex justify-center items-center">
         <div className="max-w-7xl mx-auto text-center tracking-wide">
-          <p className="text-2xl lg:text-4xl mt-2 font-bold border-gray-100 border-b-2 py-4 ">
+          <p className="text-2xl lg:text-4xl mt-2 font-bold border-gray-100 border-b-2 py-7 ">
             Download YouTube video thumbnails in different sizes and qualities with our free YouTube Thumbnail Downloader.
           </p>
           <p className=" my-4 text-xl lg:text-3xl ">            Learn why engaging thumbnails matter and how to download them effortlessly.
