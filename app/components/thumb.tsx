@@ -4,7 +4,7 @@ import { Titillium_Web } from 'next/font/google'
 import React from "react"
 import copy from 'copy-to-clipboard'
 const font = Titillium_Web({
-  weight: '600', subsets: ['latin']
+  weight: '400', subsets: ['latin']
 })
 const Thumb = () => {
   const [name, setName] = React.useState(':')
@@ -35,7 +35,6 @@ const Thumb = () => {
         url: `${thumbnailBaseUrl}${videoURL}/${option.code}.jpg`,
         quality: option.quality
       }));
-      alert(JSON.stringify(thumbnailOptions))
 
       setThumbnailOptions(thumbnailOptions);
       setVideoURL("");
@@ -47,7 +46,7 @@ const Thumb = () => {
     console.log('hello from esmail ahbal')
   }
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className={`container mx-auto px-4 py-8 ${font.className}`}>
       <header className="text-center mb-8">
         <h1 className="text-3xl font-bold mb-2">
           Youtube Thumbnail Downloader
@@ -99,7 +98,7 @@ const Thumb = () => {
       )}
       <div className="mt-10 flex justify-center items-center">
         <div className="max-w-7xl mx-auto text-center tracking-wide">
-          <p className="text-2xl lg:text-4xl mt-2 font-bold border-gray-100 border-b-2 ">
+          <p className="text-2xl lg:text-4xl mt-2 font-bold border-gray-100 border-b-2 py-9 ">
             Download YouTube video thumbnails in different sizes and qualities with our free YouTube Thumbnail Downloader.
           </p>
           <p className=" my-4 text-xl lg:text-3xl ">            Learn why engaging thumbnails matter and how to download them effortlessly.
