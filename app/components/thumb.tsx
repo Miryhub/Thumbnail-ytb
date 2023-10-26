@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { Titillium_Web } from 'next/font/google'
 import React from "react"
 import copy from 'copy-to-clipboard'
@@ -78,7 +79,7 @@ const Thumb = () => {
             {thumbnailOptions.map((option, index) => (
               <div key={index} className=" relative thumbnail-option">
 
-                <img src={option.url} alt={`Thumbnail ${index + 1}`} className="object-cover object-center my-4" />
+                <Image height={3000} width={5000} src={option.url} alt={`Thumbnail ${index + 1}`} className="object-cover object-center h-full w-full  my-4" />
                 <a
                   href={option.url}
                   download={option.url}
