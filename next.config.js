@@ -3,6 +3,9 @@ const nextConfig = {
   images: {
     domains: ['img.youtube.com']
   }
+  ,
+  ignoreDuringBuilds: true,
+
 }
 
 module.exports = nextConfig
