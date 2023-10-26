@@ -1,3 +1,4 @@
+/* eslint react/no-unescaped-entities */
 'use client'
 import { Titillium_Web } from 'next/font/google'
 import React from "react"
