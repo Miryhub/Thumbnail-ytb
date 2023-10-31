@@ -21,8 +21,7 @@ const Header = () => {
     <div className={` ${thefont.className} shadow-sky-100 tracking-widest shadow-sm py-3`}>
       <div className={` ${isShow ? 'flex justify-between items-center w-full' : 'hidden'}  `}>
         <Link href={'/'}>
-          <img src={'./logo.png'} alt="logo" className="w-40 h-16" />
-
+          <img src={'/images/logo.png'} alt="logo" width={140} height={80} />
         </Link>
         <div onClick={() => setShow(false)}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
