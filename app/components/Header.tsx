@@ -2,7 +2,6 @@
 import Link from "next/link"
 import React, { useEffect } from "react"
 import Image from 'next/image'
-import Logo from '../../public/logo.png'
 import { useRouter, usePathname } from "next/navigation"
 import { Alata } from "next/font/google"
 const Pages: { name: string, url: string }[] = [{ name: 'home', url: '/' }, { name: 'about', url: '/about' }
@@ -23,7 +22,7 @@ const Header = () => {
     <div className={` ${thefont.className} shadow-sky-100 tracking-widest shadow-sm py-3`}>
       <div className={` ${isShow ? 'flex justify-between items-center w-full' : 'hidden'}  `}>
         <Link href={'/'}>
-          <Image src={Logo} alt="logo" width={140} height={80} />
+          <Image src={'/logo.png'} alt="logo" width={140} height={80} />
         </Link>
         <div onClick={() => setShow(false)}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
